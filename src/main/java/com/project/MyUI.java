@@ -22,8 +22,6 @@ import com.vaadin.ui.VerticalLayout;
 @Theme("mytheme")
 public class MyUI extends UI {
 
-// I'm in ur UI, commenting on ur classes
-
     @Override
     protected void init(VaadinRequest vaadinRequest) {
         final VerticalLayout layout = new VerticalLayout();
@@ -32,11 +30,9 @@ public class MyUI extends UI {
         name.setCaption("Project Alpha");
 
         Button button = new Button("Click Me");
-        button.addClickListener( e -> {
-            layout.addComponent(new Label("Thanks " + name.getValue() 
-                    + ", it works!"));
-        });
-        
+        button.addClickListener( e -> layout.addComponent(new Label("Thanks " + name.getValue()
+                + ", it works!")));
+
         layout.addComponents(name, button);
         layout.setMargin(true);
         layout.setSpacing(true);
