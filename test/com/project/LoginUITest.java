@@ -5,7 +5,7 @@ import static org.junit.Assert.*;
 /**
  * Created by Owner on 2017-01-27.
  */
-public class MyUITest {
+public class LoginUITest {
     @org.junit.Before
     public void setUp() throws Exception {
 
